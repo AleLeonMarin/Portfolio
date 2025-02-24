@@ -1,0 +1,203 @@
+body {
+  background-color: #10454f;
+  font-family: Arial, sans-serif;
+}
+
+/* Cambiar el fondo del navegador a negro en pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav-cont {
+    background-color: black;
+  }
+}
+
+/* Estilo por defecto para los enlaces */
+header nav .nav-link {
+  color: white;
+}
+
+/* Estilo al hacer hover */
+header nav .nav-link:hover {
+  color: #818274;
+}
+
+.overview-text {
+  font-size: 14pt;
+}
+
+.btn-cv {
+  background-color: rgba(202, 221, 132, 0.3);
+  color: white;
+  border: 2px solid #bde038;
+  border-radius: 30px;
+  width: 150px;
+  height: 60px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cv:hover {
+  background-color: rgba(202, 221, 132, 0.5);
+}
+
+/* Contenedor del Overview */
+.overview-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+/* Estilo para las columnas del Overview */
+.overview-container .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Estilo para el texto del Overview */
+.overview-container .overview-text {
+  text-align: left;
+  padding-right: 20px;
+}
+
+/* Estilo para la imagen del Overview */
+.overview-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para las secciones de Education y Documentation */
+.edu-container,
+.doc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+/* Estilo para las filas de Education y Documentation */
+.edu-container .row,
+.doc-container .row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Estilo para las tarjetas de Education y Documentation */
+.edus-content,
+.doc-content {
+  border: 2px solid #bde038;
+  border-radius: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.edus-content img,
+.doc-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para los títulos de las secciones */
+.edu-container .row.text-center,
+.doc-container .row.text-center {
+  margin-bottom: 50px;
+}
+
+/* Estilo para el contenedor de Skills */
+.skills-container {
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+/* Estilo para las filas de Skills */
+.skills-container .row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Estilo para las tarjetas de Skills */
+.skill-content {
+  border: 2px solid #bde038;
+  border-radius: 30px;
+  padding: 40px;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para las imágenes dentro de las tarjetas de Skills */
+.skill-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.proj-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+/* Estilo para el título de la sección de Projects */
+.proj-container .row.text-center {
+  margin-bottom: 50px;
+}
+
+/* Estilo para el contenedor de las tarjetas de Projects */
+.proj-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Estilo para las tarjetas de Projects */
+.project-content {
+  border: 2px solid #bde038;
+  border-radius: 30px;
+  padding: 20px; /* Añade padding para que el contenido no esté pegado a los bordes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  margin-bottom: 20px; /* Espacio entre tarjetas */
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.project-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para los botones de GitHub */
+.project-content .btn {
+  margin-top: 15px;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alejandro.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles.css" />
+    <!-- Asegúrate de que esto esté después de Bootstrap -->
+  </head>
+  <body class="text-white">
+    <div class="container-fluid sticky-top">
+      <header class="d-flex justify-content-center align-items-center py-3">
+        <div class="me-auto">
+          <a href="#Home" class="navbar-brand fs-2 text-white">Alejandro.</a>
+        </div>
+        <nav class="fs-4">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#Home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Documentation" class="nav-link">Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!--Overview Content-->
+    <div class="overview-container container" id="Home">
+      <div class="row align-items-center">
+        <!-- Columna del texto -->
+        <div class="overview-text col-md-6 text-center">
+          <p>
+            Hello, I'm Alejandro! I'm a passionate and dedicated student with a
+            strong interest in programming and technology. Currently, I'm
+            pursuing a Bachelor's degree in Systems and Informatics Engineering
+            and am in my third year of studies. Driven by ambition, I constantly
+            seek new challenges and opportunities to expand my knowledge and
+            refine my skills. I am a hard worker, always committed to achieving
+            my goals through dedication and persistence. Beyond my technical
+            skills, I value creativity and problem-solving, always striving to
+            think outside the box and develop innovative solutions. I enjoy
+            collaborating with others, offering help whenever needed, and
+            embracing opportunities to learn from those around me.
+            Responsibility and perseverance define my work ethic, and I am
+            always eager to contribute, grow, and make a positive impact in
+            everything I do.
+          </p>
+          <div><button class="btn-cv btn btn-sucess">Download CV</button></div>
+        </div>
+
+        <!-- Columna de la imagen -->
+        <div class="col-md-6 d-flex justify-content-center">
+          <img
+            src="./media/images/Initial.png"
+            alt="avatar"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--Education section-->
+
+    <div class="edu-container container g-4" id="Education">
+      <div class="row align-items-center text-center fs-4">
+        <p>Education</p>
+      </div>
+      <div class="row justify-content-center g-4">
+        <div class="edus-content col-md-4 mb-4">
+          <img
+            src="./media/images/Cole.png"
+            alt="Colegio La Asuncion"
+            class="img-fluid"
+          />
+          <p class="text-center py-5 fs-5">
+            Completed my primary and high school education at Colegio y Escuela
+            La Asunción.
+          </p>
+        </div>
+        <div class="edus-content col-md-4 mb-4">
+          <img
+            src="./media/images/Sinfo.png"
+            alt="Escuela de Musica Sinfonica de Perez Zeledon"
+            class="img-fluid"
+          />
+          <p class="text-center py-5 fs-5">
+            Studied music for five years in Escuela de Musica Sinfonica De Perez
+            Zeledon.
+          </p>
+        </div>
+        <div class="edus-content col-md-4 mb-4">
+          <img
+            src="./media/images/UNA.png"
+            alt="Universidad Nacional De Costa Rica"
+            class="una img-fluid"
+          />
+          <p class="text-center py-5 fs-5">
+            Currently in my third year of Systems Engineering at Universidad
+            Nacional de Costa Rica.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Skills section -->
+
+    <div class="skills-container text-center" id="Skills">
+      <p class="fs-4">Skills</p>
+      <div class="container">
+        <!-- First row -->
+        <div class="row justify-content-center g-2 py-0 mb-4">
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/HTML.png"
+              alt="HTML5"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/CSS.png"
+              alt="CSS3"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/JavaScript.png"
+              alt="JavaScript"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+        </div>
+
+        <!-- Second row -->
+        <div class="row justify-content-center g-2 py-0 mb-4">
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/Docker.png"
+              alt="Docker"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/JAVA.png"
+              alt="Java"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/git.png"
+              alt="Git"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+        </div>
+
+        <!-- Third row -->
+        <div class="row justify-content-center g-2 py-0 mb-4">
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/LaTeX.png"
+              alt="LaTeX"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/C++.png"
+              alt="C++"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/VsCode.png"
+              alt="VsCode"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+        </div>
+
+        <!-- Forth row -->
+        <div class="row justify-content-center g-2 py-0 mb-4">
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/Python.png"
+              alt="Python"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/Oracle.png"
+              alt="Oracle DB"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+          <div class="skill-content col-3">
+            <img
+              src="./media/images/Linux.png"
+              alt="Linux"
+              class="img-fluid w-50 mx-auto d-block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Documentation section-->
+
+    <div class="doc-container container" id="Documentation">
+      <div class="row align-items-center text-center fs-4">
+        <p>Documentation</p>
+      </div>
+      <div class="row justify-content-center g-4">
+        <div
+          class="doc-content col-md-4 mb-4 justify-content-center align-items-center"
+        >
+          <img
+            src="./media/images/Docker-DOC.png"
+            alt="Docker Documentation"
+            class="img-fluid w-75 mx-auto"
+          />
+          <p class="text-center fs-5">
+            Basic documentation on key Docker concepts.
+          </p>
+          <a
+            href="https://github.com/AleLeonMarin/Docker"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./media/images/Github.png"
+              alt="Github"
+              class="img-fluid w-25"
+            />
+          </a>
+        </div>
+        <div class="doc-content col-md-4 mb-4">
+          <img
+            src="./media/images/Git-DOC.png"
+            alt="Git Documentation"
+            class="img-fluid w-75 mx-auto"
+          />
+          <p class="text-center fs-5">
+            Basic concepts and everyday uses of Git.
+          </p>
+          <a
+            href="https://github.com/AleLeonMarin/Git"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./media/images/Github.png"
+              alt="Github"
+              class="img-fluid w-25"
+            />
+          </a>
+        </div>
+        <div class="doc-content col-md-4 mb-4">
+          <img
+            src="./media/images/JPA.png"
+            alt="Git Documentation"
+            class="img-fluid w-75 mx-auto"
+          />
+          <p class="text-center fs-5">
+            Documentation on JPA Concepts and Definitions.
+          </p>
+          <a
+            href="https://github.com/AleLeonMarin/JPA"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./media/images/Github.png"
+              alt="Github"
+              class="img-fluid w-25"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Projects section-->
+
+    <div class="proj-container container" id="Projects">
+      <div class="row align-items-center text-center fs-4">
+        <p>Projects</p>
+      </div>
+      <div class="row justify-content-center g-4">
+        <div
+          class="proj-content col-md-4 mb-4 justify-content-center align-items-center"
+        ></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
