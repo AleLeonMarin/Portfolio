@@ -32,11 +32,21 @@ header nav .nav-link:hover {
   width: 150px;
   height: 60px;
   transition: background-color 0.3s ease;
+
+  /* Ensure text is centered inside the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Center the button in the section */
+  margin: 20px auto; /* This will keep it centered */
 }
 
 .btn-cv:hover {
   background-color: rgba(202, 221, 132, 0.5);
 }
+
 
 /* Contenedor del Overview */
 .overview-container {
