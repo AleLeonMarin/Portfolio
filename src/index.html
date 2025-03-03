@@ -15,22 +15,25 @@
   <body class="text-white">
     <!-- Header -->
     <div class="nav-cont container-fluid sticky-top">
-      <header class="navbar navbar-expand-lg py-3">
+      <header class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
         <div class="container">
           <!-- Logo -->
           <a href="#Home" class="navbar-brand fs-2 text-white">Alejandro.</a>
 
-          <!-- Botón del menú en dispositivos pequeños -->
+          <!-- Mobile Menu Button -->
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Menú -->
+          <!-- Collapsible Menu -->
           <nav
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
@@ -61,9 +64,6 @@
         </div>
       </header>
     </div>
-
-    <!-- Bootstrap JS (necesario para el menú colapsable) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Overview Section -->
     <div class="overview-container container" id="Home">
@@ -97,8 +97,8 @@
             <a
               href="./media/Alejandro_CV.pdf"
               download="Alejandro_CV.pdf"
-              class=" btn-cv btn btn-success text-center "
-            >Download CV
+              class="btn-cv btn btn-success text-center"
+              >Download CV
             </a>
           </div>
         </div>
@@ -657,7 +657,6 @@
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
