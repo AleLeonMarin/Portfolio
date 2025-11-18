@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change to 'react-dev' if you want to deploy from this branch
+      - react-dev  # Change to 'react-dev' if you want to deploy from this branch
   workflow_dispatch:
 
 permissions:
