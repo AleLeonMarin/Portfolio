@@ -15,5 +15,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: '/', // Use '/' for custom domain or '/Portfolio/' for github.io/Portfolio
+  base: '/Portfolio/', // Use '/' for custom domain or '/Portfolio/' for github.io/Portfolio
 })
