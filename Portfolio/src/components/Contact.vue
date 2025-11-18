@@ -1,47 +1,47 @@
 <template>
   <section id="contact" class="contact">
     <div class="container">
-      <h2 class="title">Trabajemos juntos</h2>
+      <h2 class="title">Let's work together</h2>
       <p class="subtitle">
-        Si tienes un proyecto en mente o simplemente quieres conversar, me encantaría saber de ti.
+        If you have a project in mind or simply want to chat, I'd love to hear from you.
       </p>
 
       <form class="form" @submit.prevent="onSubmit">
         <div class="row">
           <label class="field">
-            <span>Nombre</span>
-            <input v-model.trim="form.name" type="text" name="name" autocomplete="name" required />
+            <span>Name</span>
+            <input v-model.trim="form.name" type="text" name="name" placeholder="Your full name" autocomplete="name" required />
           </label>
           <label class="field">
             <span>Email</span>
-            <input v-model.trim="form.email" type="email" name="email" autocomplete="email" required />
+            <input v-model.trim="form.email" type="email" name="email" placeholder="your@email.com" autocomplete="email" required />
           </label>
         </div>
         <label class="field full">
-          <span>Asunto (opcional)</span>
-          <input v-model.trim="form.subject" type="text" name="subject" />
+          <span>Subject (optional)</span>
+          <input v-model.trim="form.subject" type="text" name="subject" placeholder="Web project, consulting, collaboration..." />
         </label>
         <label class="field full">
-          <span>Mensaje</span>
-          <textarea v-model.trim="form.message" name="message" rows="6" required />
+          <span>Message</span>
+          <textarea v-model.trim="form.message" name="message" rows="6" placeholder="Tell me about your project or what you have in mind..." required />
         </label>
 
         <div class="actions">
           <button class="btn" type="submit" :disabled="loading">
-            <span v-if="!loading">Enviar</span>
-            <span v-else>Enviando…</span>
+            <span v-if="!loading">Send Message</span>
+            <span v-else>Sending…</span>
           </button>
-          <p v-if="notice && notice.type === 'ok'" class="notice ok">¡Mensaje enviado! Te responderé pronto.</p>
-          <p v-else-if="notice && notice.type === 'err'" class="notice err">No fue posible enviar tu mensaje. Inténtalo de nuevo en unos minutos.</p>
+          <p v-if="notice && notice.type === 'ok'" class="notice ok">Message sent! I'll get back to you soon.</p>
+          <p v-else-if="notice && notice.type === 'err'" class="notice err">Could not send your message. Please try again in a few minutes.</p>
         </div>
 
         <p v-if="!endpointConfigured" class="config-hint">
-          Nota: configura la variable <code>VITE_FORMSPREE_ENDPOINT</code> con tu URL de Formspree para activar el envío.
+          Note: configure the <code>VITE_FORMSPREE_ENDPOINT</code> variable with your Formspree URL to enable sending.
         </p>
       </form>
 
       <div class="meta">
-        <p class="email">hola@alexportfolio.com</p>
+        <p class="email">aleleonmarin01@gmail.com</p>
         <div class="icons">
           <a class="icon" href="https://www.linkedin.com/in/alejandro-le%C3%B3n-mar%C3%ADn-311846245/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" v-html="icons.linkedin" />
           <a class="icon" href="https://github.com/AleLeonMarin" target="_blank" rel="noopener noreferrer" aria-label="GitHub" v-html="icons.github" />
