@@ -1,0 +1,40 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* Global centered container for consistent page layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Smooth scrolling to in-page anchors (#home, #about, etc.) */
+html {
+  scroll-behavior: smooth;
+  /* Offset anchors by fixed header height for nicer landings */
+  scroll-padding-top: 90px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
