@@ -39,13 +39,16 @@ import { computed, ref } from 'vue'
 import SectionHeader from './SectionHeader.vue'
 import ProjectCard from './ProjectCard.vue'
 
+// Helper to resolve public assets with base path
+const getImageUrl = (path) => path ? `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}` : ''
+
 // Edit this array to manage your projects
 const projects = [
     {
         title: 'VP Planillas',
         description: 'Modern web app nominee management system for Cafeteria y Vivero Verde Pradera',
         url: '',
-        image: '/VP.png',
+        image: getImageUrl('/VP.png'),
         tags: ['React', 'Next.js', 'Typescript', 'Tailwind', 'Express.js', 'PostgreSQL'],
         category: 'web',
     },
@@ -69,7 +72,7 @@ const projects = [
         title: 'Parqueo Parroquial San Marcos de Tarrazú',
         description: 'An app for managing the parking lot of San Marcos Church in Tarrazú, Costa Rica',
         url: '',
-        image: '/San-Marcos.jpg',
+        image: getImageUrl('/San-Marcos.jpg'),
         tags: ['Java', 'CSS', 'Oracle DBMS'],
         category: 'desktop',
     },
@@ -77,7 +80,7 @@ const projects = [
         title: 'Sigece-UNA',
         description: 'A comprehensive academic enterprise management system for Universidad Nacional de Costa Rica',
         url: '',
-        image: '/Sigece.png',
+        image: getImageUrl('/Sigece.png'),
         tags: ['Java', 'REST API', 'CSS', 'Oracle DBMS'],
         category: 'desktop',
     },
@@ -85,7 +88,7 @@ const projects = [
         title: 'UNA-KIDS',
         description: 'An educational platform for kids to learn about saving money through a imaginary bank',
         url: '',
-        image: '/UNA-KIDS.png',
+        image: getImageUrl('/UNA-KIDS.png'),
         tags: ['Java', 'CSS'],
         category: 'desktop',
     },
@@ -93,7 +96,7 @@ const projects = [
         title: 'Git Documentation',
         description: 'A complete guide to using Git version control system, written in English',
         url: '',
-        image: '/git.png',
+        image: getImageUrl('/git.png'),
         tags: ['LaTeX', 'Git'],
         category: 'documentation',
     },
@@ -101,7 +104,7 @@ const projects = [
         title: 'Docker Documentation',
         description: 'A comprehensive guide to Docker containerization platform, written in English',
         url: '',
-        image: '/docker.png',
+        image: getImageUrl('/docker.png'),
         tags: ['LaTeX', 'Docker'],
         category: 'documentation',
     },
@@ -109,7 +112,7 @@ const projects = [
         title: 'JPA Documentation',
         description: 'A JPA documentation used for comprehending Java Persistence API concepts and usage',
         url: '',
-        image: '/jpa.svg',
+        image: getImageUrl('/jpa.svg'),
         tags: ['LaTeX', 'Java', 'Oracle DBMS'],
         category: 'documentation',
     }
